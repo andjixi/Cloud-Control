@@ -9,7 +9,7 @@ public class cloudGenerateScriptRight : MonoBehaviour
     public float spawnRate = 2;
     private float timer = 0;
 
-    public float weightOffset = 20;
+    public float weightOffset = 10;
 
     // Start is called before the first frame update
     void Start()
