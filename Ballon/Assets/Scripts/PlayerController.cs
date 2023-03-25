@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -43,12 +44,19 @@ public class PlayerController : MonoBehaviour {
             transform.position = new Vector3(19f, 0f, 0f);
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    /*private void OnCollisionEnter2D(Collision2D other)
     {
         logic.gameOver();
     }
     private void OnTriggerEnter2D(Collider2D other){
         if(other.gameObject.tag == "cloud")
             logic.gameOver();
+    }*/
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "cloud") {
+            UnityEngine.Debug.Log("majmunmeee");                      
+            this.enabled = false;
+        }
     }
 }
