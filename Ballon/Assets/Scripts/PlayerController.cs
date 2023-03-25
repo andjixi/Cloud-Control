@@ -47,4 +47,8 @@ public class PlayerController : MonoBehaviour {
     {
         logic.gameOver();
     }
+    private void OnTriggerEnter2D(Collider2D other){
+        if(other.gameObject.tag == "cloud")
+            logic.gameOver();
+    }
 }

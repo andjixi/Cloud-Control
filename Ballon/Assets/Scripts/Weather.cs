@@ -8,6 +8,8 @@ using UnityEngine;
 public class Weather : MonoBehaviour {
     // Start is called before the first frame update
  
+    public GameObject gameOverScreen;
+
     void Start()
     {
         
@@ -21,8 +23,12 @@ public class Weather : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     { 
-        if(other.gameObject.layer == 3)
-        Camera.main.backgroundColor = Color.black;
+        
+
+        if(other.gameObject.layer == 3){
+            //gameOverScreen.SetActive(true);
+            Camera.main.backgroundColor = Color.black;
+        }
     }
 
 }
