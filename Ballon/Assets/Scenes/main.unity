@@ -2652,13 +2652,13 @@ MonoBehaviour:
   Spawnpoint: {fileID: 1468448533}
   Spawnpoint2: {fileID: 788159823}
   Spawnpoint3: {fileID: 1328649748}
-  Spawnpoint4: {fileID: 0}
-  Spawnpoint5: {fileID: 0}
+  Spawnpoint4: {fileID: 1659476779}
+  Spawnpoint5: {fileID: 1589513520}
   Prefab1: {fileID: 1468448532}
   Prefab2: {fileID: 788159822}
   Prefab3: {fileID: 1328649747}
-  Prefab4: {fileID: 0}
-  Prefab5: {fileID: 0}
+  Prefab4: {fileID: 1659476778}
+  Prefab5: {fileID: 1589513519}
 --- !u!70 &1295863167
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

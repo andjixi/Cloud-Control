@@ -25,15 +25,12 @@ public class Spawn : MonoBehaviour {
 
         Prefab3.transform.position = Spawnpoint3.position;
         Prefab3.GetComponent<BirdController>().running = true;
-
+/*
         Prefab4.transform.position = Spawnpoint4.position;
         Prefab3.GetComponent<BirdController>().running = true;
-
         Prefab5.transform.position = Spawnpoint5.position;
-        Prefab3.GetComponent<BirdController>().running = true;
-        // Instantiate (Prefab1, Spawnpoint.position, Spawnpoint.rotation);
-        // Instantiate (Prefab2, Spawnpoint2.position, Spawnpoint2.rotation);
-        // Instantiate (Prefab3, Spawnpoint3.position, Spawnpoint3.rotation);
+        Prefab3.GetComponent<BirdController>().running = true;*/
+        
         }
     }
     
