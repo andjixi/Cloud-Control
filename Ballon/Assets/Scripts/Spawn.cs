@@ -15,8 +15,9 @@ public class Spawn : MonoBehaviour {
     public GameObject Prefab4;
     public GameObject Prefab5;
 
-    void OnTriggerEnter2D() {
+    void OnTriggerEnter2D(Collider2D other) {
 
+        if(other.gameObject.layer == 3){
         Prefab1.transform.position = Spawnpoint.position;
         Prefab1.GetComponent<BirdController>().running = true;
         Prefab2.transform.position = Spawnpoint2.position;
@@ -33,6 +34,7 @@ public class Spawn : MonoBehaviour {
         // Instantiate (Prefab1, Spawnpoint.position, Spawnpoint.rotation);
         // Instantiate (Prefab2, Spawnpoint2.position, Spawnpoint2.rotation);
         // Instantiate (Prefab3, Spawnpoint3.position, Spawnpoint3.rotation);
+        }
     }
     
     void Start()

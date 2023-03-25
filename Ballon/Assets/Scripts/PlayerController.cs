@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour {
     public Rigidbody2D myRigidbody;
     public logicScript logic;
 
+    public bool playerIsAlive = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,10 +23,10 @@ public class PlayerController : MonoBehaviour {
     {
         Vector2 inputVector = new Vector2(0, 0);
 
-        if(Input.GetKey(KeyCode.D)){
+        if(Input.GetKey(KeyCode.D) && playerIsAlive){
             inputVector.x += 1;
         }
-        if(Input.GetKey(KeyCode.A)){
+        if(Input.GetKey(KeyCode.A) && playerIsAlive){
             inputVector.x += -1;
         }
 
@@ -32,7 +34,7 @@ public class PlayerController : MonoBehaviour {
 
         transform.position += moveDir * Time.deltaTime * speed;
 
-        myRigidbody.velocity = moveDir * Time.deltaTime * speed;
+        //myRigidbody.velocity = moveDir * Time.deltaTime * speed;
 
        if(transform.position.x < -deadZone) 
             transform.position = new Vector3(-19f, 0f, 0f);

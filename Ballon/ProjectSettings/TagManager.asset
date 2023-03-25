@@ -5,18 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - spawn
-<<<<<<< Updated upstream
   - weather
   - logic
   - cloud
-=======
-  - Logic
->>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - 
