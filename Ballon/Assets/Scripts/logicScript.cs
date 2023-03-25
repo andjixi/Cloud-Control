@@ -10,6 +10,7 @@ public class logicScript : MonoBehaviour
     public int playerScore;
     public TextMeshProUGUI score;
     float time = 0;
+    public GameObject gameOverScreen;
 
     void Start()
     {
@@ -19,16 +20,14 @@ public class logicScript : MonoBehaviour
     [ContextMenu("Increase score")]
     void Update()
     {
-        
         time += Time.deltaTime;
         playerScore = (int)(time * 3);
        
         score.text = playerScore.ToString() + "m";
     }
 
-    
-    void addScore()
+    public void gameOver()
     {
-        
+        gameOverScreen.SetActive(true);
     }
 }

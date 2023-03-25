@@ -11,6 +11,8 @@ public class cloudGenerateScriptRight : MonoBehaviour
 
     public float weightOffset = 10;
 
+    public bool paused = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,12 +22,15 @@ public class cloudGenerateScriptRight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(timer < spawnRate)
-            timer += Time.deltaTime;
-        else
-        {
-            spawnCloud();
-            timer = 0;
+        if(!paused)
+            {
+            if(timer < spawnRate)
+                timer += Time.deltaTime;
+            else
+            {
+                spawnCloud();
+                timer = 0;
+            }
         }
     }
 
