@@ -427,7 +427,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &390994950
 RectTransform:
   m_ObjectHideFlags: 0
@@ -656,9 +656,13 @@ MonoBehaviour:
   Spawnpoint: {fileID: 1653327999}
   Spawnpoint2: {fileID: 1871946739}
   Spawnpoint3: {fileID: 1635169926}
+  Spawnpoint4: {fileID: 0}
+  Spawnpoint5: {fileID: 0}
   Prefab1: {fileID: 1653327995}
   Prefab2: {fileID: 1871946735}
   Prefab3: {fileID: 1635169922}
+  Prefab4: {fileID: 0}
+  Prefab5: {fileID: 0}
 --- !u!70 &1162610314
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

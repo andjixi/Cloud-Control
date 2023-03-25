@@ -924,7 +924,7 @@ Transform:
   m_GameObject: {fileID: 319851845}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.10000038, y: 23.5, z: 0}
-  m_LocalScale: {x: 50, y: 50, z: 1}
+  m_LocalScale: {x: 53.58, y: 50, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1451525084}
@@ -1505,6 +1505,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 70
+  myRigidbody: {fileID: 0}
+  logic: {fileID: 0}
 --- !u!4 &1097418474
 Transform:
   m_ObjectHideFlags: 0
@@ -2581,6 +2583,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerScore: 0
   score: {fileID: 1543275009}
+  gameOverScreen: {fileID: 0}
 --- !u!4 &2124162129
 Transform:
   m_ObjectHideFlags: 0
