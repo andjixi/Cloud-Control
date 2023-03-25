@@ -1398,6 +1398,7 @@ MonoBehaviour:
   speed: 70
   myRigidbody: {fileID: 466449359}
   logic: {fileID: 799333939}
+  gameOverScreen: {fileID: 2091189114}
   playerIsAlive: 1
 --- !u!4 &466449356
 Transform:

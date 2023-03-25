@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour {
 
     public Rigidbody2D myRigidbody;
     public logicScript logic;
+    public GameObject gameOverScreen;
 
     public bool playerIsAlive = true;
 
@@ -55,8 +56,8 @@ public class PlayerController : MonoBehaviour {
     void OnCollisionEnter2D(Collision2D other)
     {
         if(other.gameObject.tag == "cloud") {
-            UnityEngine.Debug.Log("majmunmeee");                      
-            this.enabled = false;
+            gameOverScreen.SetActive(true);
+            playerIsAlive = false;
         }
     }
 }
