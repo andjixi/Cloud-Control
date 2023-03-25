@@ -6,7 +6,7 @@ public class cloudGenerateScriptRight : MonoBehaviour
 {
     public GameObject cloud;
 
-    public float spawnRate = 2;
+    public float spawnRate = 3;
     private float timer = 0;
 
     public float weightOffset = 10;

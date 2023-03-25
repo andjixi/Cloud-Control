@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class cloudMoveScript : MonoBehaviour
 {
-    public float moveSpeed = 8f;
+    public float moveSpeed = 10f;
     public float deadZone = -15;
     
     // Start is called before the first frame update
