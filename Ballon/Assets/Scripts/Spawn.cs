@@ -7,9 +7,13 @@ public class Spawn : MonoBehaviour {
     public Transform Spawnpoint;
     public Transform Spawnpoint2;
     public Transform Spawnpoint3;
+    public Transform Spawnpoint4;
+    public Transform Spawnpoint5;
     public GameObject Prefab1;
     public GameObject Prefab2;
     public GameObject Prefab3;
+    public GameObject Prefab4;
+    public GameObject Prefab5;
 
     void OnTriggerEnter2D() {
 
@@ -21,6 +25,11 @@ public class Spawn : MonoBehaviour {
         Prefab3.transform.position = Spawnpoint3.position;
         Prefab3.GetComponent<BirdController>().running = true;
 
+        Prefab4.transform.position = Spawnpoint4.position;
+        Prefab3.GetComponent<BirdController>().running = true;
+
+        Prefab5.transform.position = Spawnpoint5.position;
+        Prefab3.GetComponent<BirdController>().running = true;
         // Instantiate (Prefab1, Spawnpoint.position, Spawnpoint.rotation);
         // Instantiate (Prefab2, Spawnpoint2.position, Spawnpoint2.rotation);
         // Instantiate (Prefab3, Spawnpoint3.position, Spawnpoint3.rotation);
