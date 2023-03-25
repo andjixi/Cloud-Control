@@ -21,24 +21,19 @@ public class logicScript : MonoBehaviour
     [ContextMenu("Increase score")]
     void Update()
     {
-        
         time += Time.deltaTime;
         playerScore = (int)(time * 3);
-       
+    
         score.text = playerScore.ToString() + "m";
     }
 
-    public void restartGame(){
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-
-    }
-
-    public void gameOver(){
-        gameOverScreen.SetActive(true);
-    }
-    
-    void addScore()
+    public void restartGame()
     {
-        
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void gameOver()
+    {
+        gameOverScreen.SetActive(true);
     }
 }

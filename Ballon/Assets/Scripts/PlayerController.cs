@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-    public float speed = 70f;
+    public float speed = 20f;
     private int deadZone = 19;
 
     public Rigidbody2D myRigidbody;
@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour {
             inputVector.x += -1;
         }
 
-        Vector3 moveDir = new Vector3(inputVector.x, 0f, 0f);
+        Vector3 moveDir = new Vector3(inputVector.x, 0f, 0f).normalized;
 
         transform.position += moveDir * Time.deltaTime * speed;
 
@@ -58,6 +58,7 @@ public class PlayerController : MonoBehaviour {
         if(other.gameObject.tag == "cloud") {
             gameOverScreen.SetActive(true);
             playerIsAlive = false;
+            //logic.score.text = PlayerScore;
         }
     }
 }
